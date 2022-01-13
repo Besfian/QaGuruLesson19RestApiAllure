@@ -53,13 +53,13 @@ public class ShopTests {
                         .then().log().all()
                         .statusCode(302));
 
-        step("open MINIMAL CONTENT PATH", () -> open(MINIMAL_CONTENT_PATH));
-        step("created getWebDriver", () ->
-                getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", cookie)));
-        step("Open customer address", () ->
-                open("/customer/addresses"));
-        step("Check address-list", () ->
-                $(".address-list").$(".name").shouldHave(text("test test")));
+//        step("open MINIMAL CONTENT PATH", () -> open(MINIMAL_CONTENT_PATH));
+//        step("created getWebDriver", () ->
+//                getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", cookie)));
+//        step("Open customer address", () ->
+//                open("/customer/addresses"));
+//        step("Check address-list", () ->
+//                $(".address-list").$(".name").shouldHave(text("test test")));
     }
     @Test
     void addToWishlistWithTemplate() {
